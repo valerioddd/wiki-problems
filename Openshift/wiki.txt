@@ -1,0 +1,21 @@
+# no main manifest attribute, in /deployments/<application>.jar
+
+Specify the main class in pom.xml on plugin
+
+<build><plugins> ..
+<plugin>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-maven-plugin</artifactId>
+   <executions>
+      <execution>
+         <goals>
+            <goal>repackage</goal>
+         </goals>
+         <configuration>
+            <classifier></classifier>
+            <mainClass><package>.<mainClass></mainClass>
+         </configuration>
+      </execution>
+   </executions>
+</plugin>
+
