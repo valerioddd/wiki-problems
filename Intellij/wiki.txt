@@ -1,0 +1,3 @@
+# Failed to resolve junit vintage
+
+Set manual proxy with authentication
